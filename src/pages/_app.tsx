@@ -7,9 +7,11 @@ import Footer from "../components/Footer";
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Lucas Ventavele Ribeiro">
+      <meta name="description" content="Evento que acontecerá para programadores com convidados especiais">
       <title>SIEGEPAN</title>
-      <meta charSet="UTF-8"></meta>
-      <meta name="description" content="Evento que acontecerá para programadores com convidados especiais"></meta>
 
       <Header />
 
