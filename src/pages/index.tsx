@@ -53,6 +53,15 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const toggleVisibility = (faq: string) => {
+    const element = document.getElementById(faq);
+  
+    // Check if the element exists before attempting to manipulate its classList
+    if (element) {
+      element.classList.toggle("hidden");
+    }
+  };
+
   return (
     <div className="bg-gray-50">
       {/* Home Section */}
@@ -97,7 +106,7 @@ const HomePage = () => {
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() =>
-                  document.getElementById("faq-1").classList.toggle("hidden")
+                  toggleVisibility('faq-1')
                 }
               >
                 <div className="flex items-center space-x-3">
@@ -116,7 +125,7 @@ const HomePage = () => {
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() =>
-                  document.getElementById("faq-2").classList.toggle("hidden")
+                  toggleVisibility('faq-2')
                 }
               >
                 <div className="flex items-center space-x-3">
@@ -133,7 +142,7 @@ const HomePage = () => {
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() =>
-                  document.getElementById("faq-3").classList.toggle("hidden")
+                  toggleVisibility('faq-3')
                 }
               >
                 <div className="flex items-center space-x-3">
@@ -152,7 +161,7 @@ const HomePage = () => {
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() =>
-                  document.getElementById("faq-4").classList.toggle("hidden")
+                  toggleVisibility('faq-4')
                 }
               >
                 <div className="flex items-center space-x-3">
@@ -171,7 +180,7 @@ const HomePage = () => {
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() =>
-                  document.getElementById("faq-5").classList.toggle("hidden")
+                  toggleVisibility('faq-5')
                 }
               >
                 <div className="flex items-center space-x-3">
@@ -190,7 +199,7 @@ const HomePage = () => {
               <button
                 className="flex items-center w-full justify-between"
                 onClick={() =>
-                  document.getElementById("faq-6").classList.toggle("hidden")
+                  toggleVisibility('faq-6')
                 }
               >
                 <div className="flex items-center space-x-3">
