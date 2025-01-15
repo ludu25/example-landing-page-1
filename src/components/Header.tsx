@@ -2,7 +2,7 @@
 import {QuestionMarkCircleIcon, UserCircleIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 
-const Header = ({}: { isLoggedIn: boolean, hasPurchasedCourse: boolean }) => {
+const Header = ({}: {}) => {
 
   return (
     <header className="bg-gray-800 text-white p-4">
