@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Carousel = ({ guests }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,11 +55,13 @@ const Carousel = ({ guests }) => {
                     className="flex-shrink-0 bg-blue rounded-lg shadow-lg overflow-hidden w-1/3"
                   >
                     <div className="w-full h-100 bg-gray-200 overflow-hidden">
-                      <img
-                        src={guest.image}
-                        alt={guest.name}
-                        className="w-full h-full object-cover"
-                      />
+                    <Image
+                      src={guest.image} // URL ou caminho da imagem
+                      alt={guest.name} // Texto alternativo para a imagem
+                      width={500} // Largura da imagem
+                      height={300} // Altura da imagem
+                      className="w-full h-full object-cover" // Classes do Tailwind CSS
+                    />
                     </div>
                     <div className="p-4">
                       <h3 className="text-xl font-semibold text-gray-800">{guest.name}</h3>

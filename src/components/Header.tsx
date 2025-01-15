@@ -1,5 +1,6 @@
 // Header.tsx
 import {QuestionMarkCircleIcon, UserCircleIcon } from '@heroicons/react/20/solid';
+import Link from 'next/link';
 
 const Header = ({}: { isLoggedIn: boolean, hasPurchasedCourse: boolean }) => {
 
@@ -8,7 +9,9 @@ const Header = ({}: { isLoggedIn: boolean, hasPurchasedCourse: boolean }) => {
       <div className="container mx-auto flex justify-between items-center flex-col md:flex-row">
         {/* Logo and Navigation */}
         <div className="flex items-center justify-between w-full md:w-auto space-x-6 mb-4 md:mb-0">
-          <a href="/" className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">SIEGEPAN</a>
+        <Link href="/">
+          <a className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">SIEGEPAN</a>
+        </Link>
         </div>
 
         <div className="flex flex-wrap justify-between w-full md:w-auto md:space-x-6 mb-4 md:mb-0">
