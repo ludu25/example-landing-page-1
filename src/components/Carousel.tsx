@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const Carousel = ({ guests }) => {
+// Definir o tipo do Guest
+interface Guest {
+  name: string;
+  image: string;
+  title: string;
+  description: string;
+}
+
+// Definir as propriedades do componente, incluindo o tipo de guests
+interface CarouselProps {
+  guests: Guest[];
+}
+
+const Carousel: React.FC<CarouselProps> = ({ guests }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
