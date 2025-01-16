@@ -9,8 +9,8 @@ const Header = ({}: {}) => {
       <div className="container mx-auto flex justify-between items-center flex-col md:flex-row">
         {/* Logo and Navigation */}
         <div className="flex items-center justify-between w-full md:w-auto space-x-6 mb-4 md:mb-0">
-        <Link href="/">
-          <a className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">SIEGEPAN</a>
+        <Link href="/" className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">
+          SIEGEPAN
         </Link>
         </div>
 

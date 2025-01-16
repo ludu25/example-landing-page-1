@@ -93,7 +93,7 @@ const HomePage = () => {
       {/* FAQ Section */}
       <section
         id="faq"
-        className="py-12 bg-gray-50 text-gray-900"
+        className="py-12 bg-gray-50 text-gray-900 mx-10"
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">🌱 Perguntas Frequentes</h2>
